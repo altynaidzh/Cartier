@@ -11,3 +11,85 @@
   display: flex;
   justify-content: center;
 }
+/* TODO FOOTER */
+.footer {
+  width: 1505px;
+  height: 400px;
+  background-color: #1d2830;
+  margin-top: 350px;
+  margin: auto;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+  top: 100px;
+  width: 1200px;
+  left: 200px;
+  font-size: 14px;
+  color: white;
+  margin-top: 10px;
+}
+.footer__list1 {
+  list-style-type: none;
+}
+.footer__list2 {
+  list-style-type: none;
+}
+.footer__list3 {
+  list-style-type: none;
+}
+.footer_pic {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.footer__item {
+  margin-top: 10px;
+}
+.footer__item1 {
+  margin-top: 10px;
+}
+.footer__item2 {
+  margin-top: 10px;
+}
+.footer__item3 {
+  margin-top: 10px;
+}
+.footer__item0 {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.jopas__span {
+  color: white;
+  font-size: 14px;
+  width: 300px;
+  position: relative;
+  left: 220px;
+  top: 100px;
+}
+.jopas__icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 300px;
+  position: relative;
+  left: 1000px;
+  top: 80px;
+}
+.footers__jopa {
+  margin-top: 50px;
+}
+.hr {
+  margin-top: 400px;
+}
+.hr {
+  width: 1500px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 120px;
+}
+/* TODO footer styles end */
