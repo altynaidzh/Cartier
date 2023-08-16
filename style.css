@@ -1,0 +1,13 @@
+* {
+  font-family: "FancyCutProRegular", "Times New Roman", sans-serif;
+}
+
+.logo {
+  width: 150px;
+  margin: 30px;
+}
+
+#logoDiv {
+  display: flex;
+  justify-content: center;
+}
