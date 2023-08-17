@@ -11,6 +11,104 @@
   display: flex;
   justify-content: center;
 }
+/* srart */
+.container {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.first_img {
+  margin-bottom: 20px;
+}
+.first_img img,
+.second_img img {
+  width: 100%;
+  height: auto;
+}
+/* .third_imgText {
+  display: flex;
+} */
+.third_img {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 50px;
+}
+
+.third_img img {
+  width: 50%;
+  height: auto;
+}
+.five-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.five-img img {
+  width: 50%;
+  height: auto;
+}
+
+.five-img .text {
+  width: 50%;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+h2 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* email */
+.newsletter {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.newsletter h3 {
+  font-size: 24px;
+}
+
+.newsletter form {
+  margin-top: 10px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button[type="submit"] {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+=======
 
 .image-container {
   position: relative;
@@ -48,7 +146,7 @@
 .footer {
   width: 1505px;
   height: 400px;
-  background-color: #1d2830;
+  background-color: white;
   margin-top: 350px;
   margin: auto;
 }
@@ -58,10 +156,10 @@
   flex-direction: row;
   position: relative;
   top: 100px;
-  width: 1200px;
+  width: 800px;
   left: 200px;
   font-size: 14px;
-  color: white;
+  color: black;
   margin-top: 10px;
 }
 .footer__list1 {
@@ -74,9 +172,11 @@
   list-style-type: none;
 }
 .footer_pic {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   padding: 10px;
+  width: 35px;
+  border-radius: 30px;
 }
 .footer__item {
   margin-top: 10px;
@@ -95,34 +195,89 @@
   margin-bottom: 15px;
   font-size: 16px;
 }
-.jopas__span {
-  color: white;
+.footer__span {
   font-size: 14px;
   width: 300px;
   position: relative;
   left: 220px;
   top: 100px;
+  /* s */
 }
-.jopas__icons {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  width: 300px;
-  position: relative;
-  left: 1000px;
-  top: 80px;
-}
-.footers__jopa {
+
+.footers__list3 {
   margin-top: 50px;
 }
-.hr {
-  margin-top: 400px;
+/* card */
+
+/* media */
+/* Добавление медиа-запроса для меньших экранов */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .footer__content {
+    flex-direction: column;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    top: 0;
+  }
+  .footer__list1,
+  .footer__list2,
+  .footer__list3 {
+    margin-top: 20px;
+  }
+  .footer__list1 li,
+  .footer__list2 li,
+  .footer__list3 li {
+    margin: 5px 0;
+  }
+  .footer__span {
+    left: 0;
+    width: 100%;
+    top: 0;
+  }
 }
-.hr {
-  width: 1500px;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  top: 120px;
+
+/* Добавление медиа-запроса для очень маленьких экранов (мобильные устройства) */
+@media screen and (max-width: 480px) {
+  .logo {
+    margin: 10px;
+  }
+  .footer {
+    margin-top: 50px;
+    height: auto;
+  }
+  .footer__content {
+    left: 0;
+    width: 100%;
+    top: 0;
+  }
+  .footer__list1,
+  .footer__list2,
+  .footer__list3 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .footer_pic {
+    display: block;
+    margin: 10px auto;
+  }
+  .footer__item0 {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .footer__span {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 }
-/* TODO footer styles end */

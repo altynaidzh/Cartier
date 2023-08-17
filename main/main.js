@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".container");
+  container.classList.add("show");
 const API = " http://localhost:3000/CartierGoods";
 const inpName = document.querySelector("#inpName");
 // const inpDesc = document.querySelector("#inpDesc");
