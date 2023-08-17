@@ -82,30 +82,131 @@
                 >LA MAISON</a
               >
             </li>
+            <li>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <a class="accordion-button collapsed" id="btnOpenForm" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Search
+                        </a>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <form class="d-flex">
+                                <input
+                                  id="searchInp"
+                                  class="form-control me-2"
+                                  type="search"
+                                  placeholder="Search"
+                                  aria-label="Search"
+                                />
+                                <button
+                                  id="searchBtn"
+                                  class="btn btn-outline-success"
+                                  type="submit"
+                                >
+                                  Search
+                                </button>
+                              </form>
+                        </div>
+                    </div>
+                    </div>
+            </li>
           </ul>
-
-          <!-- Search Modal -->
-          <form class="d-flex">
-            <input
-              id="inpSearch"
-              class="form-control me-2"
-              type="search"
-              placeholder="Поиск"
-              aria-label="Search"
-            />
-            <button
-              id="searchBtn"
-              class="btn btn-outline-success"
-              type="submit"
-            >
-              Поиск
-            </button>
-          </form>
         </div>
       </div>
     </nav>
 
-    <div class="footer">
+    <!-- Create item-->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+      <h2 class="accordion-header">
+          <button class="accordion-button collapsed" id="btnOpenForm" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Add item +
+          </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+          <input 
+          class="form-control me-2"
+          id="inpName"
+          placeholder="Title"
+          type="text"
+          >
+          <input 
+          class="form-control me-2"
+          id="inpImg"
+          placeholder="Image"
+          type="text"
+          >
+          <button 
+              class="btn btn-outline-success text-success"
+              id="btnAdd"
+              type="submit"
+          >
+              Add
+          </button>
+          </div>
+      </div>
+      </div>
+
+      <section
+          class="container mt-5 mx-auto d-flex flex-wrap align-content-center"
+          id="section"
+          >
+
+         </section>
+
+
+          <!-- MODAL EDIT -->
+    <div 
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <input 
+            class="form-control me-2"
+            id="editInpName"
+            placeholder="Title"
+            type="text"
+          >
+          <input 
+            class="form-control me-2"
+            id="editInpImage"
+            placeholder="Image"
+            type="text"
+          >
+          <button 
+            class="btn btn-outline-success btnSave my-20"
+            id="editBtnSave"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            type="submit"
+          >
+            Изменить
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      
+
+    <!-- <div class="footer">
       <div class="footer__content">
         <ul class="footer__list1">
           <li class="footer__item0"><strong>CUSTOMER CARE</strong></li>
@@ -165,7 +266,7 @@
           />
         </ul>
       </div>
-    </div>
+    </div> -->
     <!-- Link to JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
